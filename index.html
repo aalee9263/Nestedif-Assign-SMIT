@@ -13,17 +13,17 @@
       if (percentageOfAttendence >= 70) {
         submittFee = prompt("Have you submitted the Fees?");
 
-        if (submittFee == "Yes") {
+        if (submittFee == "yes") {
           timeOfExam = prompt("Have you reached on time in exam center?");
 
-          if (timeOfExam = "yes") {
-            
+          if (timeOfExam == "yes") {
             alert("you can sit in exam center");
+          } else {
+            alert("You are late. you can not sit in exam center");
           }
-          else{
-        alert("You can not appear in exam. you didn't pay the fees")
-      }
-        } 
+        } else {
+          alert("You can not appear in exam. you didn't pay the fees");
+        }
       } else {
         alert("You attendence is short");
       }
