@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <script>
-        let
+      numberOfDays = prompt("How many days you appeared in class?");
+
+      percentageOfAttendence = (numberOfDays / 120) * 100;
+      if (percentageOfAttendence >= 70) {
+        submittFee = prompt("Have you submitted the Fees?");
+
+        if (submittFee == "Yes") {
+          timeOfExam = prompt("Have you reached on time in exam center?");
+
+          if (timeOfExam = "yes") {
+            
+            alert("you can sit in exam center");
+          }
+          else{
+        alert("You can not appear in exam. you didn't pay the fees")
+      }
+        } 
+      } else {
+        alert("You attendence is short");
+      }
     </script>
-</body>
+  </body>
 </html>
